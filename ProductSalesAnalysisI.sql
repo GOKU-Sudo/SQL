@@ -37,7 +37,5 @@
 
 -- The result format is in the following example.
 
-select product_name,year,price
-from Sales as a
-join Product as b
-on a.product_id=b.product_id
+select p.product_name,s.year,s.price from sales as s
+join product as p on s.product_id=p.product_id;
